@@ -9,9 +9,15 @@
 <body>
 <div id="app">
   {{ msg }}
-    <input text="search"/>
+    <input type="text"/>
     <button>Search</button>
 </div>
+<div id="search-container">
+      <label> 
+        <input id="query" value='catrrs' type="text"/>
+         <button id="search-button"  disabled onclick="search()">Search</button>
+    </label>
+</div>  
 <script>
 new Vue({
       el: '#app',
