@@ -22,7 +22,7 @@
 new Vue({
       el: '#app',
       data: {
-        msg: 'Hello World from Vue'
+        msg: 'Hello World'
       }
     });
   
@@ -67,6 +67,7 @@ function handleAuthResult(authResult) {
   if (authResult && !authResult.error) {
     // Authorization was successful. Hide authorization prompts and show
     // content that should be visible after authorization succeeds.
+    alert ('authorization succssefull');
     $('.pre-auth').hide();
     $('.post-auth').show();
     loadAPIClientInterfaces();
